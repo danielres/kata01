@@ -4,12 +4,11 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Todos</title>
 </svelte:head>
 
-<Header text="Home" />
+<Header text="Todos" />
 
 <Main>
-	<h1>Welcome to SvelteKit</h1>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+	<h1>Todos</h1>
 </Main>
