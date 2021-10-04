@@ -68,4 +68,7 @@
 		@apply rounded-md shadow-lg py-1 bg-white;
 		@apply ring-1 ring-black ring-opacity-5 focus:outline-none;
 	}
+	button > :global(svg) {
+		@apply h-6 w-6;
+	}
 </style>

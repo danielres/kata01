@@ -54,4 +54,8 @@
 	.link.current {
 		@apply bg-black;
 	}
+
+	button > :global(svg) {
+		@apply h-6 w-6;
+	}
 </style>
