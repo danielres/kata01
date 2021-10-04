@@ -1,8 +1,13 @@
 <script>
-	import '../app.postcss'
 	import Menu from '../components/Menu.svelte'
+	import Protected from '../components/Protected.svelte'
+	import Tooltip from '../components/Tooltip.svelte'
+	import '../app.postcss'
 </script>
 
-<Menu />
+<Tooltip />
 
-<slot />
+<Protected>
+	<Menu />
+	<slot />
+</Protected>
