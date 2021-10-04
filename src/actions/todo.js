@@ -1,4 +1,4 @@
-import { tooltip } from '../components/Tooltip.svelte'
+import { tooltip } from '../components/renderless/Tooltip.svelte'
 
 export const todo = (node, opts) => {
 	node.onclick = (e) => e.preventDefault()
