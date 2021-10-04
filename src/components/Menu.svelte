@@ -2,12 +2,11 @@
 	import Wide from './responsive/Wide.svelte'
 	import Narrow from './responsive/Narrow.svelte'
 
-	import SmAll from './Menu/sm/All.svelte'
-
 	import ButtonToggle from './Menu/sm/ButtonToggle.svelte'
-	import Logo from './Menu/Logo.svelte'
-	import MdMain from './Menu/md/Main.svelte'
+	import Logo from './Logo.svelte'
 
+	import SmAll from './Menu/sm/All.svelte'
+	import MdMain from './Menu/md/Main.svelte'
 	import MdSub from './Menu/md/Sub.svelte'
 
 	const items = {
@@ -28,7 +27,7 @@
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex items-center justify-between h-16">
 			<div class="flex items-center">
-				<div class="flex-shrink-0">
+				<div class="flex-shrink-0 h-8 w-8 text-indigo-500">
 					<Logo />
 				</div>
 
