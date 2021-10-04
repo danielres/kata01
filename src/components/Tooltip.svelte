@@ -1,7 +1,9 @@
-<!-- Credit: Renderless svelte https://github.com/stephane-vanraes/renderless-svelte/ -->
+<!-- Credit: Based on Renderless svelte https://github.com/stephane-vanraes/renderless-svelte/ -->
 <script context="module">
 	import { writable } from 'svelte/store'
-	const options = writable(false)
+	const defaultOptions = { visible: false, text: '' }
+
+	const options = writable(defaultOptions)
 	const dimensions = writable({
 		x: 0,
 		y: 0,
@@ -14,7 +16,7 @@
 	})
 
 	export const tooltip = (node, opts) => {
-		let _opts = opts
+		let _opts = { ...opts, visible: true }
 
 		const mouseover = () => {
 			document.addEventListener('scroll', scroll)
@@ -36,8 +38,7 @@
 
 		const mouseout = () => {
 			document.addEventListener('scroll', scroll)
-
-			options.set(false)
+			options.set(defaultOptions)
 		}
 
 		const scroll = (ev) => {
