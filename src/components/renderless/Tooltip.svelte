@@ -1,5 +1,5 @@
 <!-- Credit: Based on Renderless svelte https://github.com/stephane-vanraes/renderless-svelte/ -->
-<script context="module">
+<script lang="ts" context="module">
 	import { writable } from 'svelte/store'
 	const defaultOptions = { visible: false, text: '' }
 
@@ -15,7 +15,7 @@
 		top: 0
 	})
 
-	export const tooltip = (node, opts) => {
+	export const tooltip = (node: HTMLElement, opts: { text: string }) => {
 		let _opts = { ...opts, visible: true }
 
 		const mouseover = () => {
@@ -64,8 +64,8 @@
 				node.removeEventListener('mouseover', mouseover)
 				node.removeEventListener('mouseout', mouseout)
 			},
-			update(opts) {
-				_opts = opts
+			update(opts: { text: string }) {
+				_opts = { ...opts, visible: true }
 			}
 		}
 	}
