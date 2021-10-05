@@ -24,10 +24,10 @@
 </script>
 
 <nav class="bg-gray-800">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+	<div class="max-w-7xl sm:px-6 lg:px-8 px-4 mx-auto">
 		<div class="flex items-center justify-between h-16">
 			<div class="flex items-center">
-				<div class="flex-shrink-0 h-8 w-8 text-indigo-500">
+				<div class="flex-shrink-0 w-8 h-8 text-indigo-500">
 					<Logo />
 				</div>
 
@@ -41,7 +41,7 @@
 			</Wide>
 
 			<Narrow>
-				<div class="-mr-2 flex ">
+				<div class=" flex -mr-2">
 					<ButtonToggle bind:isOpen />
 				</div>
 			</Narrow>

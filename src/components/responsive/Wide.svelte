@@ -1,3 +1,3 @@
-<div class="hidden md:block">
+<div class="md:block hidden">
 	<slot />
 </div>

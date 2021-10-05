@@ -9,9 +9,9 @@
 
 <style lang="postcss">
 	button {
-		@apply w-full flex justify-center items-center;
+		@apply flex items-center justify-center w-full;
 		@apply px-3 py-2;
-		@apply rounded-md text-sm font-medium;
+		@apply text-sm font-medium rounded-md;
 		@apply opacity-80 hover:opacity-100 focus:opacity-100 focus:outline-none;
 		@apply transition-opacity duration-200;
 	}

@@ -11,7 +11,7 @@
 {:else}
 	<FadeIn>
 		<Backdrop>
-			<div class="box space-y-5 w-full max-w-sm">
+			<div class="box w-full max-w-sm space-y-5">
 				<h1 class="heading">Sigin in to your account</h1>
 				<FormLogin />
 			</div>

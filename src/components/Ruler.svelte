@@ -6,7 +6,7 @@
 
 <style lang="postcss">
 	.line {
-		@apply w-1/4 border-b border-gray-300 lg:w-1/4;
+		@apply lg:w-1/4 w-1/4 border-b border-gray-300;
 	}
 	.text {
 		@apply text-xs text-center text-gray-600 uppercase;

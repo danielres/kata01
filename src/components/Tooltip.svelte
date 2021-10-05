@@ -18,7 +18,7 @@
 
 <style lang="postcss">
 	.tooltip {
-		@apply fixed py-2 px-3 text-sm bg-gray-800 rounded-md text-gray-100;
+		@apply fixed px-3 py-2 text-sm text-gray-100 bg-gray-800 rounded-md;
 		@apply shadow-md;
 		transform: translateX(-50%) translateY(calc(-100% - 9px));
 		max-width: 10rem;

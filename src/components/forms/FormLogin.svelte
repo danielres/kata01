@@ -43,9 +43,9 @@
 	</div>
 </div>
 
-<p class="muted text-center font-light">
+<p class="muted font-light text-center">
 	Don't have an account?
-	<a use:todo href="/signup" class="inline-block font-medium text-gray-500 hover:underline"
+	<a use:todo href="/signup" class="hover:underline inline-block font-medium text-gray-500"
 		>Create One</a
 	>
 </p>
@@ -57,7 +57,7 @@
 	input {
 		@apply block w-full px-4 py-2 mt-2;
 		@apply text-gray-700 bg-white border rounded-md;
-		@apply focus:border-blue-500  focus:outline-none focus:ring;
+		@apply focus:border-blue-500 focus:outline-none focus:ring;
 	}
 	.muted {
 		@apply text-xs text-gray-400;

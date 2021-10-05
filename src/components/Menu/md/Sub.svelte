@@ -9,29 +9,29 @@
 	const toggle = () => (isOpen = !isOpen)
 </script>
 
-<div class="ml-4 flex items-center md:ml-6">
+<div class="md:ml-6 flex items-center ml-4">
 	<button
 		type="button"
-		class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+		class="hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white p-1 text-gray-400 bg-gray-800 rounded-full"
 	>
 		<span class="sr-only">View notifications</span>
 		<Bell />
 	</button>
 
 	<!-- Profile dropdown -->
-	<div class="ml-3 relative">
+	<div class="relative ml-3">
 		<div>
 			<button
 				on:click={toggle}
 				type="button"
-				class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+				class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex items-center max-w-xs text-sm bg-gray-800 rounded-full"
 				id="user-menu-button"
 				aria-expanded="false"
 				aria-haspopup="true"
 			>
 				<span class="sr-only">Open user menu</span>
 
-				<div class="h-8 w-8">
+				<div class="w-8 h-8">
 					<Avatar />
 				</div>
 			</button>
@@ -64,11 +64,11 @@
 
 <style lang="postcss">
 	.dropdown {
-		@apply absolute origin-top-right right-0 mt-2 w-48;
-		@apply rounded-md shadow-lg py-1 bg-white;
+		@apply absolute right-0 w-48 mt-2 origin-top-right;
+		@apply py-1 bg-white rounded-md shadow-lg;
 		@apply ring-1 ring-black ring-opacity-5 focus:outline-none;
 	}
 	button > :global(svg) {
-		@apply h-6 w-6;
+		@apply w-6 h-6;
 	}
 </style>
